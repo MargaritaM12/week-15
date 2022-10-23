@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Пункт 3</title>
+        <style>
+            .color-panel {
+                position: absolute;
+                background-color: rgba(254, 255, 182, 0.741);
+                height: 110px;
+                padding: 15px 5px 5px;
+                margin-left: 650px;
+
+            }
+            #red {
+                background-color: #ff6b6b;
+            }
+            #pink {
+                background-color: #ff53d7;
+            }
+            #blue {
+                background-color: #71f8ff;
+            }
+            #yellow {
+                background-color: #f1fa73;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="color-panel">
+            <select class="select-color" name="colors">
+                <option
+                    style="style"
+                    id="red"
+                    data-color="#ff6b6b"
+                    onclick="changeColor('red')"></option>
+                <option
+                    style="style"
+                    id="pink"
+                    data-color="#ff53d7"
+                    onclick="changeColor('pink')"></option>
+                <option
+                    style="style"
+                    id="blue"
+                    data-color="#71f8ff"
+                    onclick="changeColor('blue')"></option>
+                <option
+                    style="style"
+                    id="yellow"
+                    data-color="#f1fa73"
+                    onclick="changeColor('yellow')"></option>
+            </select>
+        </div>
+
+        <script>
+            function changeColor(colorValue) {
+                document.body.style.background = document
+                    .getElementById(colorValue)
+                    .dataset
+                    .color;.background - color;
+            }
+        </script>
+    </body>
+</html>
